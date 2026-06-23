@@ -1,0 +1,39 @@
+{
+  "name": "express-ts-backend-starter",
+  "version": "1.0.0",
+  "description": "Starter Express.js backend with TypeScript and Docker.",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "nodemon",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit",
+    "db:migrate": "tsx src/db/migrate.ts"
+  },
+  "keywords": [
+    "express",
+    "typescript",
+    "docker",
+    "api"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "helmet": "^8.1.0",
+    "kysely": "^0.29.2",
+    "morgan": "^1.11.0",
+    "pg": "^8.22.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^24.0.0",
+    "@types/pg": "^8.20.0",
+    "nodemon": "^3.1.14",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
